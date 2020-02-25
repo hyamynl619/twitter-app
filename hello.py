@@ -7,7 +7,7 @@ def create_app():
     @app.route("/")
     
     def hello():
-        return render_template
+        return render_template('home.html')
         
     @app.route("/about")
 
