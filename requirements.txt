@@ -1,0 +1,11 @@
+flask
+jinja2
+basilica
+tweepy
+redis
+psycopg2
+flask_sqlalchemy
+gunicorn
+scikit-learn
+python-dotenv
+python-decouple
