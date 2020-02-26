@@ -7,7 +7,17 @@ verify_ssl = true
 pylint = "*"
 
 [packages]
-flask = "*"
+basilica = "*"
+tweepy = "*"
+redis = "*"
+psycopg2 = "*"
+gunicorn = "*"
+scikit-learn = "*"
+python-dotenv = "*"
+python-decouple = "*"
+Flask = "*"
+Jinja2 = "*"
+Flask-SQLAlchemy = "*"
 
 [requires]
 python_version = "3.7"
