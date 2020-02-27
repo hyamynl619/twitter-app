@@ -8,5 +8,9 @@
 
         <body>
             <h1> Twitoff is so cool! </h1>
+            <u1>{% for user in users %}
+                <li>{{user.name}}</li>
+                {% endfor %}
+            </u1>
         </body>
     </html>
