@@ -8,15 +8,20 @@
 
             <link rel="stylesheet" href="https://unpkg.com/picnic">
         </head>
-        {% block content %}
-        <form action="/user" method="post">
-            <input type="text" name="user_name" placeholder="User to add">
-            <input type="submit" value="Add User">
-        </form>
+        
+       
 
+        
         <body>
-        {% endblock %}
             <h1> Twitoff is so cool! </h1>
+        <article class="flex two" style="padding: 3em lem;">
+            {% block content %}
+            <form action="/user" method="post">
+                <input type="text" name="user_name" placeholder="User to add">
+                <input type="submit" value="Add User">
+            </form>
+
+            
             <p> Content goes here ... </p>
             <u1>{% for user in users %}
                 <li>{{user.name}}</li>

@@ -14,6 +14,8 @@ def create_app():
 
     # add config for database
     app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///db.sqlite3'
+
+    #stop tracking modifications on sqlachemy config
     app.config['SQLAlCHEMY_TRACK_MODFICATIONS'] = False
 
     # have the database know about the app
@@ -25,8 +27,8 @@ def create_app():
         return render_template('base.html', title='Home',
                                users=users)
 
-    @app.route('/reset')
 # this is to drop old DB and restart it whenever we make changes to this file
+    @app.route('/reset')
     def reset():
         DB.drop_all()
         DB.create_all()

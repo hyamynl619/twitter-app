@@ -1,14 +1,14 @@
 {% extends "base.html" % }
 {% block content % }
 
-<h2 > User: {{title}} < /h2 >
+<h2> User: {{title}} </h2 >
 
-<p > {{message}} < /p >
+<p> {{message}} </p>
 
-<ul >
+<ul>
     {% for tweet in tweets % }
-    <li > {{tweet.id}} - {{tweet.text}} < /li >
+    <li> {{tweet.id}} - {{tweet.text}} </li >
     {% endfor & }
-</ul >
+</ul>
 
 {% endblock % }
