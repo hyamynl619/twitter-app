@@ -27,4 +27,5 @@ class Tweet(DB.Model):
       return '<Tweet {}>'.format(self.text)
 
 
+embedding = DB.Column(DB.PickleType, nullable=False)
 
